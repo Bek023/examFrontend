@@ -1,0 +1,54 @@
+
+.main_block{
+
+    width:110rem ;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* background-color: black; */
+}
+
+.logo{
+    margin: 0 0;
+}
+
+.nav_block{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    margin: 0 0;
+    
+}
+.links{
+    color: white;
+}
+.iconMenu{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+.antdA{
+    display: none;
+    margin: 0 0 ;
+}
+
+
+
+@media (max-width: 500px) {
+    .main_block{
+        width: 98%;
+    }
+    .nav_block {
+        display: none;
+    }
+    .iconMenu{
+        display: block;
+    }
+    .antdA{
+        display: block;
+    }
+}
