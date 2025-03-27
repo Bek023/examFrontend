@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kindly+Jasmine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.main_block {
+    max-width: 144rem;
+    height: 79rem;
+    background-image: url(../../image/h_title.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_block {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.text_container {
+    position: relative;
+    width: fit-content;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.bold_text {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.italic_text {
+    margin: 0;
+    margin-left: 50rem;
+    padding: 0;
+    font-family: 'Kindly Jasmine', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 199, 0, 1);
+
+}
+
+.outline_text {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    -webkit-text-stroke: 2px white;
+    color: transparent
+}
+
+.title_btn {
+    margin: 0 0;
+    width: 23rem;
+    height: 6rem;
+    border: none;
+    border-radius: 3rem;
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+.items_scroll {
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: loop 10s linear infinite;
+}
+
+.scrollItem {
+    border-radius: 2rem;
+}
+.scrollItem:hover{
+    
+}
+
+.fade {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, black, transparent 50%);
+}
+
+
+.fade.left {
+    left: 0;
+}
+
+
+.fade.right {
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.inner:hover {
+    animation-play-state: paused;
+}
+
+
+@media (max-width: 500px) {
+    .title_block {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .title {
+        /* gap: 1rem; */
+    }
+
+    .text_container {
+        width: 32.3rem;
+        height: 18.6rem;
+    }
+
+    .bold_text {
+        font-size: 36px;
+    }
+
+    .italic_text {
+        font-size: 48px;
+        margin:0;
+    }
+
+    .outline_text {
+        font-size: 72px;
+        line-height: 90%;
+    }
+    .icon img{
+        margin-left: 30rem;
+    }
+}
