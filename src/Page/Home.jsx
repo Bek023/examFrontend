@@ -1,5 +1,6 @@
 import Header from '../componets/Header';
 import Scroll from '../componets/scroll';
+import Scroll2 from '../componets/scroll2';
 import icon from '../image/icon.png';
 import { scroll } from '../image/image_store';
 import style from "./style/home.module.css";
@@ -26,17 +27,8 @@ function Home({ }) {
                     </div>
                 </div>
             </div>
-            {/* <div className={style.items_scroll}>
-                <div className={style.inner}>
-                {scroll.map((i) => {
-                    return (
-                        <img src={i.img} key={i.id} className={style.scrollItem}></img>
-                    )
-                })}
-                </div>
-                <div className={style.fade}></div>
-            </div> */}
             <Scroll/>
+            <Scroll2/>
         </div>
     )
 }
