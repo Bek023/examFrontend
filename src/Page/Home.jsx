@@ -5,6 +5,8 @@ import icon from '../image/icon.png';
 import style from "./style/home.module.css";
 import icon2 from '../image/1.png';
 
+   
+
 
 function Home({ }) {
     return (
