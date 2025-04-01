@@ -1,8 +1,6 @@
 
 .main_block{
-
-    width:110rem ;
-    
+    max-width: 102.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +38,10 @@
 
 @media (max-width: 500px) {
     .main_block{
-        width: 100vw;
+
+        width: 95%;
+        margin: 0;
+
     }
     .nav_block {
         display: none;
