@@ -2,7 +2,7 @@ import Header from '../componets/Header';
 
 function Home ({}){
     return(
-        <div className={style.main_block}>
+        <div className='main_block'>
             
         </div>
     )

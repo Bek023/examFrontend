@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    /* background-color: black; */
+    background-color: black;    
 }
 
 .logo{
@@ -40,7 +40,7 @@
 
 @media (max-width: 500px) {
     .main_block{
-        width: 98%;
+        width: 100vw;
     }
     .nav_block {
         display: none;
