@@ -1,0 +1,40 @@
+.filterPanel {
+    width: 295px;
+    height: 608px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .filterSection {
+    margin-bottom: 20px;
+  }
+  
+  .peopleOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  .showButton {
+    margin-top: 10px;
+    background-color: #1890ff;
+    color: white;
+  }
+  
+  .resetButton {
+    margin-top: 5px;
+    color: #ff4d4f;
+    color: black;
+  }
+.X{
+  color: grey;
+}
+  

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    /* background-color: black; */
+    background-color: black;    
 }
 
 .logo{
@@ -38,8 +38,10 @@
 
 @media (max-width: 500px) {
     .main_block{
+
         width: 95%;
         margin: 0;
+
     }
     .nav_block {
         display: none;
