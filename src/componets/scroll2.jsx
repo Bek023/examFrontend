@@ -13,10 +13,12 @@ import style from './style/scroll.module.css';
 import { Pagination } from 'swiper/modules';
 
 export default function Scroll2() {
+    let i = 99;
     return (
         <>
-            <div className={style.block}>
+            <div className={style.block} key={9000}>
                 <Swiper
+                    
                     slidesPerView={4}
                     centeredSlides={true}
                     spaceBetween={30}
@@ -28,10 +30,23 @@ export default function Scroll2() {
                     className={style.swiper}
                 >
                     {Data.map((card)=>{
+                        
+                        i=i+1;
                         return(
                             <>
-                            <SwiperSlide className={style.swiper_slide} key={card.id}>
-                            
+                            <SwiperSlide className={style.swiper_slide} key={i}>
+                                <div className={style.blog} style={{backgroundImage: `url(${card.image})` } }>
+                                    <p className={style.transport}>{card.transport}</p>
+                                    <h2>{card.title}</h2>
+                                    <p>
+                                    <span>{card.duration}</span>
+                                    <span>{card.priceChild} $</span>
+                                    </p>
+                                    <p>{card.description}</p>
+                                    <button className={style.title_btn}>Подробнее</button>
+
+                                {/* <img src={card.image}  /> */}
+                                </div>
                             </SwiperSlide>
                             </>
                         )

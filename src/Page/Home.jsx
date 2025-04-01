@@ -2,8 +2,8 @@ import Header from '../componets/Header';
 import Scroll from '../componets/scroll';
 import Scroll2 from '../componets/scroll2';
 import icon from '../image/icon.png';
-import { scroll } from '../image/image_store';
 import style from "./style/home.module.css";
+import icon2 from '../image/1.png';
 
 
 function Home({ }) {
@@ -27,8 +27,53 @@ function Home({ }) {
                     </div>
                 </div>
             </div>
-            <Scroll/>
-            <Scroll2/>
+            <Scroll />
+            <div className={style.heading_blog}>
+                <span className={style.blog_heading}>Популярные экскурсии</span>
+                <span className={style.heading_btn}>Смотреть все</span>
+            </div>
+            <Scroll2 />
+            <div className={style.o_nas}>
+                <div className={style.o_nas_text}>
+                    <h2>О нас</h2>
+                    <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br />
+                        <br />
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+            </div>
+            <h2 className={style.car_title}> Виды экскурсий</h2>
+            <div className={style.car_block}>
+                <div className={style.car_type}>
+                    <img src={icon2} />
+                    <div className={style.car_text}>
+                        <h2>Автобусный тур</h2>
+                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                    </div>
+                </div>
+                <div className={style.car_type}>
+                    <img src={icon2} />
+                    <div className={style.car_text}>
+                        <h2>Автобусный тур</h2>
+                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                    </div>
+                </div>
+                <div className={style.car_type}>
+                    <img src={icon2} />
+                    <div className={style.car_text}>
+                        <h2>Автобусный тур</h2>
+                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                    </div>
+                </div>
+                <div className={style.car_type}>
+                    <img src={icon2} />
+                    <div className={style.car_text}>
+                        <h2>Автобусный тур</h2>
+                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

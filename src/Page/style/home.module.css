@@ -86,6 +86,7 @@
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
 }
+
 .items_scroll {
     position: relative;
     overflow: hidden;
@@ -101,9 +102,8 @@
 .scrollItem {
     border-radius: 2rem;
 }
-.scrollItem:hover{
-    
-}
+
+
 
 .fade {
     position: absolute;
@@ -124,18 +124,123 @@
     transform: rotateY(180deg);
 }
 
-@keyframes loop {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
+.heading_blog {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
 }
 
+.blog_heading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(4, 153, 221, 1);
 
-.inner:hover {
-    animation-play-state: paused;
+
+}
+
+.heading_btn {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: rgba(40, 40, 40, 1);
+    cursor: pointer;
+
+
+}
+
+.o_nas {
+    position: relative;
+    margin-top: 5rem;
+    height: 75rem;
+    background-image: url(../../image/h_title.png);
+    background-size: 75% 85%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.o_nas_text {
+    position: absolute;
+    top: 11%;
+    left: 53%;
+    padding: 6rem;
+    width: 54rem;
+    height: 47rem;
+    background: rgba(237, 237, 237, 0.7);
+}
+
+.o_nas_text h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(4, 153, 221, 1);
+}
+
+.o_nas_text p {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0%;
+}
+
+.car_title {
+    padding: 2rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(4, 153, 221, 1);
+
+}
+
+.car_block {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.car_type {
+    width: 55rem;
+    height: 13.4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.car_type img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.car_text h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(4, 153, 221, 1);
+
+}
+
+.car_text p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 
@@ -143,10 +248,6 @@
     .title_block {
         flex-direction: column;
         gap: 2rem;
-    }
-
-    .title {
-        /* gap: 1rem; */
     }
 
     .text_container {
@@ -160,14 +261,15 @@
 
     .italic_text {
         font-size: 48px;
-        margin:0;
+        margin: 0;
     }
 
     .outline_text {
         font-size: 72px;
         line-height: 90%;
     }
-    .icon img{
+
+    .icon img {
         margin-left: 30rem;
     }
 }
