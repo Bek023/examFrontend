@@ -3,9 +3,10 @@ import Scroll from '../componets/scroll';
 import Scroll2 from '../componets/scroll2';
 import icon from '../image/icon.png';
 import style from "./style/home.module.css";
-import icon2 from '../image/1.png';
+import Car from '../componets/car_type';
+import Gallary from '../componets/gallary';
+import Rate from '../componets/rate';
 
-   
 
 
 function Home({ }) {
@@ -45,38 +46,11 @@ function Home({ }) {
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                 </div>
             </div>
-            <h2 className={style.car_title}> Виды экскурсий</h2>
-            <div className={style.car_block}>
-                <div className={style.car_type}>
-                    <img src={icon2} />
-                    <div className={style.car_text}>
-                        <h2>Автобусный тур</h2>
-                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
-                    </div>
-                </div>
-                <div className={style.car_type}>
-                    <img src={icon2} />
-                    <div className={style.car_text}>
-                        <h2>Автобусный тур</h2>
-                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
-                    </div>
-                </div>
-                <div className={style.car_type}>
-                    <img src={icon2} />
-                    <div className={style.car_text}>
-                        <h2>Автобусный тур</h2>
-                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
-                    </div>
-                </div>
-                <div className={style.car_type}>
-                    <img src={icon2} />
-                    <div className={style.car_text}>
-                        <h2>Автобусный тур</h2>
-                        <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
-                    </div>
-                </div>
-            </div>
+            <Car/>
+            <Gallary />
+            <Rate/>
         </div>
+
     )
 }
 
