@@ -159,46 +159,43 @@
 .o_nas {
     position: relative;
     margin-top: 5rem;
-    height: 75rem;
+    min-height: 60rem; /* Kattaroq ekranda yaxshi chiqadi */
     background-image: url(../../image/h_title.png);
-    background-size: 75% 85%;
+    background-size: contain; /* Rasmi siqilmasligi uchun */
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 1rem;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .o_nas_text {
-    position: absolute;
-    top: 11%;
-    left: 53%;
-    padding: 6rem;
-    width: 54rem;
-    height: 47rem;
+    max-width: 50rem;
+    padding: 4rem;
     background: rgba(237, 237, 237, 0.7);
+    border-radius: 1rem;
+    text-align: center;
 }
 
 .o_nas_text h2 {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
+    font-size: 2rem;
     color: rgba(4, 153, 221, 1);
 }
 
 .o_nas_text p {
-    padding-top: 1rem;
-    padding-right: 1rem;
-    font-family: Montserrat;
+    margin-top: 1rem;
+    font-family: Montserrat, sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.5;
-    letter-spacing: 0%;
 }
 
-
-
-
-@media (max-width: 500px) {
+/* 📱 **Mobil (max-width: 768px)** */
+@media (max-width: 768px) {
     .title_block {
         flex-direction: column;
         gap: 2rem;
@@ -226,4 +223,30 @@
     .icon img {
         margin-left: 30rem;
     }
+    .o_nas {
+        min-height: 50rem;
+        background-size: cover;
+        padding: 3rem 1rem;
+    }
+
+    .o_nas_text {
+        max-width: 90%;
+        padding: 2rem;
+    }
+
+    .o_nas_text h2 {
+        font-size: 1.5rem;
+    }
+
+    .o_nas_text p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+
 }

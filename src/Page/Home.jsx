@@ -2,14 +2,19 @@ import Header from '../componets/Header';
 import Scroll from '../componets/scroll';
 import Scroll2 from '../componets/scroll2';
 import icon from '../image/icon.png';
-import style from "./style/home.module.css";
 import Car from '../componets/car_type';
 import Gallary from '../componets/gallary';
 import Rate from '../componets/rate';
+import Forma from '../componets/forma';
+import style from "./style/home.module.css";
+import Footer from '../componets/footer';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 function Home({ }) {
+    let navigate = useNavigate();
     return (
         <div className={style.main_block}>
             <Header />
@@ -49,6 +54,8 @@ function Home({ }) {
             <Car/>
             <Gallary />
             <Rate/>
+            <Forma/>
+            <Footer/>
         </div>
 
     )

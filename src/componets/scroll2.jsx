@@ -19,7 +19,7 @@ export default function Scroll2() {
             <div className={style.block} key={9000}>
                 <Swiper
                     
-                    slidesPerView={4}
+                    slidesPerView={1}
                     centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
@@ -44,8 +44,6 @@ export default function Scroll2() {
                                     </p>
                                     <p>{card.description}</p>
                                     <button className={style.title_btn}>Подробнее</button>
-
-                                {/* <img src={card.image}  /> */}
                                 </div>
                             </SwiperSlide>
                             </>

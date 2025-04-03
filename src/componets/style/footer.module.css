@@ -1,0 +1,35 @@
+
+.block{
+    margin-top: 2rem;
+    width: 144rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block {
+    margin-top: 2rem;
+    width: 100%; /* 144rem o‘rniga 100% qilib qo‘ydim */
+    max-width: 144rem; /* Maksimal kenglikni chekladik */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Kichik ekranda elementlar joylashishi uchun */
+    padding: 0 2rem; /* Yon tomondan padding qo‘shildi */
+}
+
+/* 🌐 Tablet uchun (768px - 1024px) */
+@media (max-width: 1024px) {
+    .block {
+        flex-direction: column; /* Elementlarni vertikal qilish */
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* 📱 Mobil uchun (0 - 767px) */
+@media (max-width: 767px) {
+    .block {
+        width: 100%;
+        padding: 0 1rem; /* Yon tomonlar uchun kichikroq padding */
+    }
+}

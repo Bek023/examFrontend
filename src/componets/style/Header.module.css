@@ -52,4 +52,7 @@
     .antdA{
         display: block;
     }
+    a{
+        color: black;
+    }
 }

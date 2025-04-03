@@ -22,7 +22,7 @@ export default function Rate() {
             <div className={style.block} key={9000}>
                 <Swiper
 
-                    slidesPerView={4}
+                    slidesPerView={2}
                     centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
