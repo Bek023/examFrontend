@@ -1,5 +1,6 @@
 import style from './style/car_type.module.css';
 import icon2 from '../image/1.png'
+import { Link } from 'react-router-dom';
 
 export default function Car({ }) {
     return (
@@ -37,7 +38,7 @@ export default function Car({ }) {
                     </div>
                 </div>
                 <p className={style.description}>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
-                <button className={style.btn}>К экскурсиям</button>
+                <button className={style.btn}><Link to="/Экскурсии">К экскурсия</Link></button>
 
 
 

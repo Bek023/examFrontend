@@ -8,13 +8,13 @@ import Rate from '../componets/rate';
 import Forma from '../componets/forma';
 import style from "./style/home.module.css";
 import Footer from '../componets/footer';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
 
 function Home({ }) {
-    let navigate = useNavigate();
+   
     return (
         <div className={style.main_block}>
             <Header />
@@ -28,7 +28,9 @@ function Home({ }) {
                             <br />
                             <span className={style.outline_text}>PERO TRAVEL</span>
                         </div>
-                        <button className={style.title_btn}>К экскурсиям</button>
+                        <button className={style.title_btn}>
+                            <Link to="/Экскурсии">К экскурсия</Link>
+                        </button>
                     </div>
                     <div className={style.icon}>
                         <img src={icon} />

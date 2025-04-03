@@ -11,6 +11,7 @@ import style from './style/scroll.module.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 export default function Scroll2() {
     let i = 99;
@@ -43,7 +44,9 @@ export default function Scroll2() {
                                     <span>{card.priceChild} $</span>
                                     </p>
                                     <p>{card.description}</p>
-                                    <button className={style.title_btn}>Подробнее</button>
+                                    <button className={style.title_btn}>
+                                    <Link to="/Экскурсии">Подробнее</Link>
+                                    </button>
                                 </div>
                             </SwiperSlide>
                             </>
