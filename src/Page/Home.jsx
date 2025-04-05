@@ -6,7 +6,7 @@ import Car from '../componets/car_type';
 import Gallary from '../componets/gallary';
 import Rate from '../componets/rate';
 import Forma from '../componets/forma';
-import style from "./style/Home.module.css";
+import style from "./style/home.module.css";
 import Footer from '../componets/footer';
 import { Link } from 'react-router-dom';
 

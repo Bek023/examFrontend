@@ -1,4 +1,4 @@
-import style from './style/Car_type.module.css';
+import style from './style/car_type.module.css';
 import icon2 from '../image/1.png'
 import { Link } from 'react-router-dom';
 

@@ -7,7 +7,7 @@ import Data from '../store/data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import style from './style/Rate.module.css';
+import style from './style/rate.module.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
@@ -34,7 +34,7 @@ export default function Rate() {
                 >
                     {Data.map((card) => {
 
-                        i +=1;
+                        i += 1;
                         return (
                             <>
                                 <SwiperSlide className={style.swiper_slide} key={i} >

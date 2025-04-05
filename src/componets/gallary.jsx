@@ -1,5 +1,5 @@
 import image from '../image/scroll.jpg';
-import Style from './style/Galary.module.css';
+import Style from './style/galary.module.css';
 
 export default function Gallary({ }) {
     return (
