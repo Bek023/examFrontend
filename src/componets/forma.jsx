@@ -1,5 +1,5 @@
 
-import style from './style/forma.module.css';
+import style from './style/Forma.module.css';
 
 export default function Forma({ }) {
     const handleSubmit = (event) => {

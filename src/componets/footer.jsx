@@ -1,5 +1,5 @@
 
-import style from './style/footer.module.css';
+import style from './style/Footer.module.css';
 import logo from '../image/logo.png';
 import icon from '../image/iconF.png';
 

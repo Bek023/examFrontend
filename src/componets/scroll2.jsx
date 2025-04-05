@@ -7,7 +7,7 @@ import Data from '../store/data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import style from './style/scroll.module.css';
+import style from './style/Scroll.module.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';

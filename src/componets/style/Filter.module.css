@@ -1,0 +1,74 @@
+.filterPanel {
+  width: 295px;
+  height: 608px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filterTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterPeopleOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.filterShowButton {
+  margin-top: 10px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filterShowButton:hover {
+  background-color: #0056b3;
+}
+
+.filterResetButton {
+  margin-top: 5px;
+  background: none;
+  color: black;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.filterResetButton:hover {
+  color: red;
+}
+
+.filterClose {
+  color: grey;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .filterPanel {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .filterShowButton,
+  .filterResetButton {
+    width: 100%;
+    text-align: center;
+  }
+}
