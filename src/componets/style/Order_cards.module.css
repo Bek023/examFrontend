@@ -28,43 +28,47 @@
 }
 
 .show_button {
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
   color: white;
+  width: 250px;
+  height: 50px;
   border: none;
   padding: 12px 24px;
   font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-left: 4%;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-.show_button:hover {
-  background: black;  
-  border:  solid black 2px;
-  
-}
 .child2{
   display: flex;
   flex-direction: column;
 }
 
-
 @media (max-width: 768px) {
-  .filterContainer {
+  .filter_container {
     flex-direction: column;
     align-items: stretch;
-    padding: 15px;
+    padding: 10px;
+    gap: 10px;
+    margin: 0;
   }
 
-  .filterCard {
+  .filter_card {
     width: 100%;
     height: auto;
-    padding: 12px;
+    justify-content: flex-start;
+    padding: 12px 16px;
   }
 
-  .showButton {
+  .show_button {
     width: 100%;
-    text-align: center;
+    margin-left: 0;
+  }
+
+  .child2 {
+    gap: 10px;
   }
 }
+

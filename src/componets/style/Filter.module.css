@@ -1,12 +1,16 @@
 .filterPanel {
-  width: 295px;
-  height: 608px;
+  width: 300px;
+  height: 100%;
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-left: 10%;
 }
-
+.title{
+  color: rgba(4, 153, 221, 1);
+}
 .filterTitle {
   font-size: 18px;
   font-weight: bold;
@@ -15,6 +19,12 @@
 
 .filterSection {
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(237, 237, 237, 1) ;
+}
+.peopleOptions{
+  margin-top: 4%;
+  border-radius: 40px;
+  margin-left: 2%;
 }
 
 .filterPeopleOptions {
@@ -22,24 +32,30 @@
   flex-wrap: wrap;
   gap: 5px;
 }
+.metroRadio{
+  display: flex;
+  flex-direction: column;
+  margin-top: 9%;
+  margin-right: 30%;
+}
 
-.filterShowButton {
+.showButton {
   margin-top: 10px;
-  background-color: #1890ff;
+  background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
   color: white;
-  border: none;
+  border: none; 
   padding: 10px;
   font-size: 14px;
-  border-radius: 6px;
+  border-radius: 40px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.filterShowButton:hover {
+.showButton:hover {
   background-color: #0056b3;
 }
 
-.filterResetButton {
+.resetButton {
   margin-top: 5px;
   background: none;
   color: black;
@@ -57,18 +73,103 @@
   color: grey;
   cursor: pointer;
 }
+h1{
+  font-size: 17px;
+  font-family: Montserrat;
+}
+.priceP{
+  display: flex;
+  font-size: 12px;
+}
+.filterSection h1{
+  margin-top: 7%;
+}
+.priceP div{
+  font-size: 15px;
+  border-radius: 40px;
+  border: solid rgb(157, 157, 157) 2px;
+  width: 105px;
+  height: 30px;
+  color: rgba(40, 40, 40, 1);
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  font-family: Montserrat;
+  padding: 4px;
+}
 
+.X{
+  color: rgba(212, 212, 212, 1);
+  padding: 0;
+}
 
 @media (max-width: 768px) {
   .filterPanel {
+    display: block;
     width: 100%;
     height: auto;
     padding: 15px;
+    border-radius: 0;
+    box-shadow: none;
   }
 
-  .filterShowButton,
-  .filterResetButton {
+  .filterTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .filterSection {
+    margin-bottom: 15px;
+  }
+
+  .filterPeopleOptions {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .metroRadio {
+    margin-top: 5%;
+    margin-right: 0;
+  }
+
+  .showButton {
     width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .resetButton {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .priceP {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .priceP div {
+    width: 100%;
+    font-size: 14px;
+    height: auto;
+    padding: 8px;
+  }
+
+  .X {
+    text-align: right;
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 16px;
     text-align: center;
   }
 }

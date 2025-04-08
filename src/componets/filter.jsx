@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { Slider, Button, Radio } from "antd";
 import styles from "./style/Filter.module.css";
-import H from "./H"
+import H from "./H";
 
 const Filter = ({ onFilter }) => {
   const [price, setPrice] = useState([1600, 4000]);
   const [people, setPeople] = useState(null);
   const [location, setLocation] = useState("");
 
+
   const handleFilter = () => {
-    console.log("Filter parametrlari:", { price, people, location });
+    console.log("Filter parameters:", { price, people, location });
     onFilter({ price, people, location });
   };
 
@@ -22,11 +23,15 @@ const Filter = ({ onFilter }) => {
 
   return (
     <div className={styles.filterPanel}>
-      <H tagName="h3" cn={styles.title}>Фильтры</H>
-
+      <H tagName="h1" cn={styles.title}>Фильтры</H>
 
       <div className={styles.filterSection}>
-        <H tagName="h4">Стоимость</H>
+        <H tagName="h1">Стоимость</H>
+        <div className={styles.priceP}>
+          <div>{price[0]}</div>
+          <div>{price[1]}</div>
+
+        </div>
         <Slider
           range
           min={1600}
@@ -34,15 +39,15 @@ const Filter = ({ onFilter }) => {
           value={price}
           onChange={setPrice}
         />
-        <div>{price[0]} - {price[1]} ₽</div>
+       
       </div>
 
-
       <div className={styles.filterSection}>
-        <H tagName="h4">Количество человек</H>
-        <div className={styles.peopleOptions}>
+        <H tagName="h1">Количество человек</H>
+        <div >
           {[...Array(10)].map((_, index) => (
             <Button
+            className={styles.peopleOptions}
               key={index}
               type={people === index + 1 ? "primary" : "default"}
               onClick={() => setPeople(index + 1)}
@@ -51,6 +56,7 @@ const Filter = ({ onFilter }) => {
             </Button>
           ))}
           <Button
+          className={styles.peopleOptions}
             type={people === 11 ? "primary" : "default"}
             onClick={() => setPeople(11)}
           >
@@ -59,10 +65,9 @@ const Filter = ({ onFilter }) => {
         </div>
       </div>
 
-
       <div className={styles.filterSection}>
-        <H tagName="h3">Место</H>
-        <Radio.Group value={location} onChange={(e) => setLocation(e.target.value)}>
+        <H tagName="h1">Место</H>
+        <Radio.Group className={styles.metroRadio} value={location} onChange={(e) => setLocation(e.target.value)}>
           {["Абхазия", "Россия", "Грузия", "Турция", "Азербайджан", "Узбекистан"].map((place) => (
             <Radio key={place} value={place}>{place}</Radio>
           ))}
@@ -70,9 +75,11 @@ const Filter = ({ onFilter }) => {
       </div>
 
 
-      <Button type="primary" block className={styles.showButton} onClick={handleFilter}>{"Показать туры"}</Button>
+      <Button type="primary" block className={styles.showButton} onClick={handleFilter}>
+        Показать
+      </Button>
       <Button type="link" block className={styles.resetButton} onClick={handleReset}>
-        <span className={styles.X}>X</span> Сбросить фильтры
+        <span className={styles.X}>X</span>Сбросить фильтры
       </Button>
     </div>
   );

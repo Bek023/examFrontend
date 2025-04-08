@@ -60,7 +60,7 @@
   
 }
 
-.blog p, span {
+.blog p > span {
   font-family: Montserrat;
   text-align: start;
   color: white;
