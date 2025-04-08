@@ -1,5 +1,5 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Data from '../store/data';
 
@@ -11,6 +11,7 @@ import style from './style/scroll.module.css';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 export default function Scroll2() {
     let i = 99;
@@ -19,7 +20,7 @@ export default function Scroll2() {
             <div className={style.block} key={9000}>
                 <Swiper
                     
-                    slidesPerView={4}
+                    slidesPerView={1}
                     centeredSlides={true}
                     spaceBetween={30}
                     grabCursor={true}
@@ -43,9 +44,9 @@ export default function Scroll2() {
                                     <span>{card.priceChild} $</span>
                                     </p>
                                     <p>{card.description}</p>
-                                    <button className={style.title_btn}>Подробнее</button>
-
-                                {/* <img src={card.image}  /> */}
+                                    <button className={style.title_btn}>
+                                    <Link to="/Экскурсии">Подробнее</Link>
+                                    </button>
                                 </div>
                             </SwiperSlide>
                             </>

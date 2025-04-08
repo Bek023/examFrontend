@@ -1,0 +1,43 @@
+.block {
+    width: 100%;
+    max-width: 144rem;
+    height: 29rem;
+    background-image: url('../../image/forma.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0rem 10rem;
+    box-sizing: border-box;
+}
+
+.block h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 7.2rem;
+    color: white;
+    margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .block {
+        padding: 4rem 6rem;
+        height: 24rem;
+    }
+
+    .block h1 {
+        font-size: 5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .block {
+        padding: 3rem 2rem;
+        height: auto;
+        text-align: center;
+    }
+
+    .block h1 {
+        font-size: 3.6rem;
+    }
+}

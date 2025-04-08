@@ -1,32 +1,42 @@
-
 .swipper_block {
-    position: relative;
-  }
-  
+  position: relative;
+  width: 100%;
+}
 
+/* Swiper konteyner */
+.swiper {
+  width: 100%;
+  height: auto; /* Dinamik balandlik */
+  padding-bottom: 2rem;
+}
+
+/* Slayder slaydi */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rasm o'lchamlari */
+.swiper-slide img {
+  border-radius: 2rem;
+ 
+  max-width: 40rem;
   
+  object-fit: cover; /* Rasm nisbatlarini saqlash */
+}
+
+/* 📱 **Mobil uchun moslashuv (max-width: 768px)** */
+@media (max-width: 768px) {
   .swiper {
-    width: 100%;
-    height: 20rem;
+      height: auto;
   }
-  
-  .swiper-slide {
-    
-    text-align: center;
-    font-size: 18px;
-    
-    border-radius: 2rem;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .swiper-slide img {
-    border-radius: 2rem;
-    display: block;
-    width: 40rem;
-    height: 25rem;
+      max-width: 90%; /* Mobil ekranda rasm siqilib qolmaydi */
+      height: 100%;
   }
-  
+}

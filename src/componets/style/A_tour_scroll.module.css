@@ -1,0 +1,46 @@
+.block {
+    display: flex;
+}
+
+.child1 {
+    width: 50%;
+}
+
+.child1 h2 {
+    margin: 7rem 0;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgba(4, 153, 221, 1);
+
+}
+
+.child1 p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.child1 p::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: -1.5rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.child1 span {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+.child2 {
+    width: 40%;
+}

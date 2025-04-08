@@ -1,0 +1,24 @@
+.block {
+    margin-top: 5rem;
+    height: 60rem;
+    background-image: url('../../image/forma.png');
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+
+.main p {
+    margin-bottom: 2rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-align: right;
+    color: rgba(4, 153, 221, 1);
+
+}
