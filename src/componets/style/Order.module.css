@@ -1,4 +1,42 @@
-.child2{
-  display: flex;
-  flex-direction: row;
-}
+.dad {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .child1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+  
+  .child2 {
+    display: flex;
+    flex-direction: row; 
+    align-items: self-start;
+    justify-content: center; 
+  }
+  
+  @media (max-width: 768px) {
+    .dad {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .child1, .child2 {
+      margin: 10px 0;
+    }
+    .child1{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .child2 {
+      flex-direction: column; 
+    }
+  }
+  

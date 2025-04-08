@@ -1,41 +1,34 @@
 import React, { useState } from "react";
 import { Card, Space, Select, DatePicker, InputNumber, Button } from "antd";
 import { EnvironmentOutlined, CalendarOutlined, TeamOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
-import style from "../css/Order_cards.module.css";
+import style from "./style/Order_cards.module.css";
+import Div from "./Div";
 import data from "../Main.js/main";
-import Div from "./Div"
 
 const { Option } = Select;
 const cities = ["Грузия", "Россия", "Абхазия", "Турция", "Азербайджан", "Узбекистан"];
 
-const TourFilters = () => {
-  const navigate = useNavigate();
+const TourFilters = ({ setFilteredData }) => {
   const [city, setCity] = useState(cities[0]);
   const [date, setDate] = useState(null);
   const [people, setPeople] = useState(null);
   const [location, setLocation] = useState("");
-  const[filter, setFilter] = useState(data)
 
   const handleFilter = () => {
+  
     let filteredTours = data.filter((tour) => {
-      const forPeople = people ? tour.people >= people : true;
-      const forLocation = location ? tour.country.toLowerCase() === location.toLowerCase() : true;
-
+      const forPeople = people ? tour.people >= people : true; 
+      const forLocation = location ? tour.country.toLowerCase() === location.toLowerCase() : true; 
       return forPeople && forLocation;
     });
 
-    console.log("Filter natijasi:", filteredTours);
-    setFilter(filteredTours)
+    
+    setFilteredData(filteredTours);
   };
-
-
 
   return (
     <Div cn={style.filter_container}>
-      
       <Space size="middle">
-        
         <Card className={style.filter_card}>
           <Space>
             <Select
@@ -43,7 +36,7 @@ const TourFilters = () => {
               style={{ width: 120 }}
               onChange={(value) => {
                 setCity(value);
-                setLocation(value);
+                setLocation(value); 
               }}
             >
               {cities.map((city) => (
@@ -56,7 +49,6 @@ const TourFilters = () => {
           </Space>
         </Card>
 
-       
         <Card className={style.filter_card}>
           <Space>
             <DatePicker onChange={(date) => setDate(date)} />
@@ -64,7 +56,6 @@ const TourFilters = () => {
           </Space>
         </Card>
 
-        
         <Card className={style.filter_card}>
           <Space>
             <InputNumber min={1} max={10} value={people} onChange={setPeople} />
@@ -73,12 +64,13 @@ const TourFilters = () => {
         </Card>
       </Space>
 
-      
-      <Button   className={style.show_button} onClick={handleFilter}>
+      <button className={style.show_button} onClick={handleFilter}>
         Подробнее
-      </Button>
+      </button>
     </Div>
   );
+  
 };
+
 
 export default TourFilters;

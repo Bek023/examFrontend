@@ -1,15 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Order from "../components/Order";
-import TravelDetails from "./TravelDetails";
+import Order from "../componets/Order";
 
 const Excursy = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Order />} />
-      <Route path="/details" element={<TravelDetails />} />
-    </Routes>
+  return (<>
+      <Order />
+      </>
   );
 };
 
 export default Excursy;
+

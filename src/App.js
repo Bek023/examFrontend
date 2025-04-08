@@ -3,15 +3,22 @@ import Home from './Page/Home';
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
+import Excursy from './Page/Excursy';
 
 function App() {
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route exact path="/about" element={<About />} /> */}
-        {/* <Route exact path="/contact" element={<Contact />} /> */}
+    <Routes>
+      
+    <Route path="/" element={<Excursy />} />
+     
+
+
+      {/* <Header />
+      
+
+        <Route path='/excursy' element={<Excursy />} />
+      </Routes> */}
       </Routes>
     </>
   );
